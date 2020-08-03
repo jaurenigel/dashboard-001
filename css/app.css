@@ -1,7 +1,125 @@
-.top-bar{
-    margin: 0 2em;
-    height: 8vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+* {
+  box-sizing: border-box;
+}
+.top-bar {
+  margin: 0 2em;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #303133;
+}
+
+.bg-wrapper {
+  background: #303133;
+}
+
+.profile {
+  display: flex;
+}
+
+.container {
+  margin: 0 2em;
+}
+
+.main-container {
+  display: grid;
+  height: calc(100vh - 8vh);
+  grid-template-columns: 15% 3fr;
+  grid-template-rows: auto;
+  grid-template-areas: "sidebar main";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding-top: 1em;
+  /* background: #606266; */
+  background: #fff;
+}
+
+.main-content {
+  grid-area: main;
+  padding-top: 1em;
+  background: #f2f6fc;
+}
+
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.card {
+  background: #fff;
+  border-radius: 7px;
+  height: 100px;
+  color: #303133;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0 1em;
+}
+
+.card-icon {
+  font-size: 2em;
+  color: #303133;
+}
+
+.card-data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2em;
+}
+
+.card-figure {
+  font-weight: bold;
+  font-size: 1.7em;
+  margin-bottom: 0.3em;
+}
+
+.card-text {
+  color: #606266;
+}
+
+.graph-container {
+  margin-top: 2em;
+}
+
+.graph-card {
+  background: #fff;
+  border-radius: 7px;
+  height: 600px;
+  color: #303133;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0 1em;
+}
+
+.graph {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-header {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui.secondary.vertical.pointing.menu .active.item {
+    border-color: #f56c6c;
+}
+
+.logo{
+    color: #f56c6c;
+    font-weight: bolder;
+}
+
+.text-color span{
+    color: #606266;
+}
+
+.item{
+    margin-bottom: 1em !important;
+    font-size: 1.1em !important;
 }
