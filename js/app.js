@@ -6,8 +6,7 @@ let option = {
   tooltip: {
     trigger: "axis",
     axisPointer: {
-      // 坐标轴指示器，坐标轴触发有效
-      type: "shadow", // 默认为直线，可选为：'line' | 'shadow'
+      type: "shadow",
     },
   },
   legend: {
@@ -103,50 +102,47 @@ let option = {
   ],
 };
 
-
-
 let option2 = {
-    tooltip: {
-        trigger: 'item',
-        formatter: '{a} <br/>{b}: {c} ({d}%)'
+  tooltip: {
+    trigger: "item",
+    formatter: "{a} <br/>{b}: {c} ({d}%)",
+  },
+  legend: {
+    orient: "vertical",
+    left: 10,
+    data: ["Users", "Downloads", "Donations", "Likes", "Changes"],
+  },
+  series: [
+    {
+      name: "Analytics",
+      type: "pie",
+      radius: ["50%", "70%"],
+      avoidLabelOverlap: false,
+      label: {
+        show: false,
+        position: "center",
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: "30",
+          fontWeight: "bold",
+        },
+      },
+      labelLine: {
+        show: false,
+      },
+      data: [
+        { value: 335, name: "Users" },
+        { value: 310, name: "Downloads" },
+        { value: 234, name: "Donations" },
+        { value: 135, name: "Likes" },
+        { value: 1548, name: "Changes" },
+      ],
     },
-    legend: {
-        orient: 'vertical',
-        left: 10,
-        data: ['Users', 'Downloads', 'Donations', 'Likes', 'Changes']
-    },
-    series: [
-        {
-            name: 'Analytics',
-            type: 'pie',
-            radius: ['50%', '70%'],
-            avoidLabelOverlap: false,
-            label: {
-                show: false,
-                position: 'center'
-            },
-            emphasis: {
-                label: {
-                    show: true,
-                    fontSize: '30',
-                    fontWeight: 'bold'
-                }
-            },
-            labelLine: {
-                show: false
-            },
-            data: [
-                {value: 335, name: 'Users'},
-                {value: 310, name: 'Downloads'},
-                {value: 234, name: 'Donations'},
-                {value: 135, name: 'Likes'},
-                {value: 1548, name: 'Changes'}
-            ]
-        }
-    ]
+  ],
 };
 
 // use configuration item and data specified to show chart
 myChart.setOption(option);
 myChart2.setOption(option2);
-

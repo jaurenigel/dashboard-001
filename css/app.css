@@ -107,19 +107,37 @@
 }
 
 .ui.secondary.vertical.pointing.menu .active.item {
-    border-color: #f56c6c;
+  border-color: #f56c6c;
 }
 
-.logo{
-    color: #f56c6c;
-    font-weight: bolder;
+.logo {
+  color: #f56c6c;
+  font-weight: bolder;
 }
 
-.text-color span{
-    color: #606266;
+.text-color span {
+  color: #606266;
 }
 
-.item{
-    margin-bottom: 1em !important;
-    font-size: 1.1em !important;
+.item {
+  margin-bottom: 1em !important;
+  font-size: 1.1em !important;
+}
+
+.footer{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+ .footer img {
+  height: 40%;
+  width: 100%;
+}
+
+.footer .text{
+  font-weight: bold;
 }
