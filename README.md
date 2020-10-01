@@ -1,8 +1,6 @@
-# Maiko Dashboard 001
+# Dashboard UI Design Challenge 01
 
-## CSS/HTML UI dashboard by Nigel Jaure
-
-### Technologies:
+### Technologies Used:
 
 * HTML5
 * CSS3
@@ -12,4 +10,6 @@
 
 ![Screenshot](screenshot.png)
 
-Click [here](https://maiko-001.netlify.app) for live demo
+*Click [here](https://maiko-001.netlify.app) for live demo*
+
+UI Dashboard By [Nigel Jaure](https://nigel.co.zw)
