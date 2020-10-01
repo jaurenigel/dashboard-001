@@ -12,4 +12,4 @@
 
 *Click [here](https://maiko-001.netlify.app) for live demo*
 
-UI Dashboard By [Nigel Jaure](https://nigel.co.zw)
+UI Dashboard By [Nigel Jaure](https://nigel.co.zw) &copy; 2020
